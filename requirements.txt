@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib
+
+xlrd==1.2.0
