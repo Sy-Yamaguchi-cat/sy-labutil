@@ -1,6 +1,6 @@
 [project]
 name = "sylabutil"
-version = "0.0.1"
+version = "0.0.2"
 description = "A utility library that provides data reading and laboratory-specific plotting methods for laboratory instruments."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -15,3 +15,4 @@ Repository = "https://github.com/Sy-Yamaguchi-cat/sy-labutil"
 
 [project.scripts]
 "sylabutil-U0080D" = "sylabutil.U0080D.__main__:plot"
+"sylabutil-TAC" = "sylabutil.TAC.__main__:plot"
