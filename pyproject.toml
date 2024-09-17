@@ -16,3 +16,4 @@ Repository = "https://github.com/Sy-Yamaguchi-cat/sy-labutil"
 [project.scripts]
 "sylabutil-U0080D" = "sylabutil.U0080D.__main__:plot"
 "sylabutil-TAC" = "sylabutil.TAC.__main__:plot"
+"sylabutil-LS45" = "sylabutil.LS45.__main__:plot"
