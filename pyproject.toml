@@ -1,11 +1,16 @@
 [project]
 name = "sylabutil"
-version = "0.0.3"
+version = "0.0.4"
 description = "A utility library that provides data reading and laboratory-specific plotting methods for laboratory instruments."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { file = "LICENSE" }
-dependencies = { file = "requirements.txt" }
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "xlrd==1.2.0",
+]
 authors = [
   { name = "Seiya Yamaguchi", email = "sei.rm0307@gmail.com" },
 ]
