@@ -15,10 +15,9 @@ filedata = sylabutil.TAC.parse(filepath)
 block = filedata["block"]
 times = block["1"]["Time[ns]"]
 values = block["1"]["No_of_photons"]
-ax.plot(times, values)
-ax.set_xlabel("Time[ns]")
-ax.set_ylabel("No_of_photons")
-ax.legend()
-fig.tight_layout()
-fig.savefig(outfile, transparent=True)
+
+plt.plot(times, values)
+plt.xlabel("Time[ns]")
+plt.ylabel("No_of_photons")
+plt.show()
 ```
