@@ -2,6 +2,7 @@ import numpy as np
 from pathlib import Path
 from typing import TypedDict
 
+
 class LS45Data(TypedDict):
     filename: Path
     wavelength_arr: np.array
@@ -9,7 +10,7 @@ class LS45Data(TypedDict):
 
 
 def parse(filename: Path) -> LS45Data:
-    txt = filename.read_text()
+    txt = filename.read_text(encoding="shift_jis")
     lines = txt.split("\n")
     is_data_start = False
     wavelength_arr = []
@@ -28,5 +29,5 @@ def parse(filename: Path) -> LS45Data:
     return LS45Data(
         filename=filename,
         wavelength_arr=np.array(wavelength_arr),
-        intensity_arr=np.array(intensity_arr)
+        intensity_arr=np.array(intensity_arr),
     )
